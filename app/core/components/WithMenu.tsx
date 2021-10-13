@@ -20,7 +20,8 @@ export interface MenuItem {
 }
 
 const menuItems: Array<MenuItem> = [
-  { label: "products", href: "/products", adminPage: false },
+  { label: "home", href: "/", adminPage: false },
+  { label: "products", href: "/products", adminPage: true },
   { label: "create a product", href: "/products/new", adminPage: true },
   { label: "add an image", href: "/api/files/upload", adminPage: true },
 ]
