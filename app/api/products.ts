@@ -8,7 +8,7 @@ const handler: BlitzApiHandler = async (req: BlitzApiRequest, res: BlitzApiRespo
       id: product.id,
       name: product.name,
       url: `${req.headers.host}/api/products`,
-      image: product.imageName,
+      image: product.image,
       price: product.price,
     }
   })

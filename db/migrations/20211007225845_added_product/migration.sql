@@ -6,6 +6,6 @@ CREATE TABLE "Product" (
     "price" REAL NOT NULL,
     "url" TEXT NOT NULL,
     "description" TEXT NOT NULL,
-    "imageName" TEXT NOT NULL,
+    "image" TEXT NOT NULL,
     "name" TEXT NOT NULL
 );

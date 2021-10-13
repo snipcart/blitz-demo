@@ -9,7 +9,7 @@ export function ProductForm<S extends z.ZodType<any, any>>(props: FormProps<S>) 
       <LabeledTextField name="name" label="Name" placeholder="Name" />
       <LabeledTextField name="price" label="Price" placeholder="Price" type="number" />
       <LabeledTextField name="description" label="Description" placeholder="Description" />
-      <LabeledTextField name="imageName" label="Image" placeholder="Image" />
+      <LabeledTextField name="image" label="Image" placeholder="Image" />
     </Form>
   )
 }

@@ -14,6 +14,26 @@ const admins = [
     password: "admin12345",
   },
 ]
+const products = [
+  {
+    price: 30.99,
+    description: "Art by Neven Krcmarek",
+    image: "Pattern3.jpeg",
+    name: "Lonely Island",
+  },
+  {
+    price: 29.99,
+    description: "Art by Pawel Czerwinski",
+    image: "Pattern2.jpeg",
+    name: "The Triangle Forest",
+  },
+  {
+    price: 29.99,
+    description: "Art by Pawel Czerwinski",
+    image: "Pattern1.jpeg",
+    name: "Candy Land",
+  },
+]
 
 const seed = async () => {
   for (let i = 0; i < admins.length; i++) {
@@ -24,6 +44,13 @@ const seed = async () => {
         data: { email: admin.email, hashedPassword, role: "USER" },
         select: { id: true, name: true, email: true, role: true },
       })
+    }
+  }
+
+  for (let i = 0; i < products.length; i++) {
+    const product = products[i]
+    if (product) {
+      await db.product.create({ data: product })
     }
   }
 }
