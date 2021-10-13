@@ -24,13 +24,19 @@
     ]
   },
   "dependencies": {
+    "@chakra-ui/icons": "1.0.15",
+    "@chakra-ui/react": "1.1.2",
+    "@emotion/react": "11.1.4",
+    "@emotion/styled": "11.0.0",
     "@prisma/client": "3.2.1",
     "blitz": "0.41.0",
-    "react-dom": "alpha",
-    "react": "alpha",
-    "zod": "3.9.8",
     "final-form": "4.20.4",
-    "react-final-form": "6.5.7"
+    "formidable": "1.2.2",
+    "framer-motion": "3.2.0",
+    "react": "alpha",
+    "react-dom": "alpha",
+    "react-final-form": "6.5.7",
+    "zod": "3.9.8"
   },
   "devDependencies": {
     "@types/preview-email": "2.0.1",
