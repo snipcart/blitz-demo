@@ -6,7 +6,7 @@ import getProducts from "app/products/queries/getProducts"
 const ITEMS_PER_PAGE = 100
 
 export const ProductsList = () => {
-  const [{ products }] = useQuery(getProducts, null)
+  const [products] = useQuery(getProducts, null)
 
   return (
     <div>
