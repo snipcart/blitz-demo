@@ -39,7 +39,7 @@ function ProductSummary(props: { product }) {
             data-item-price={props.product.price}
             data-item-url="/paintings/starry-night"
             data-item-description={props.product.description}
-            data-item-image="/logo.png"
+            data-item-image={props.product.imageName}
             data-item-name={props.product.name}
             fontSize={{ base: "1xl", lg: "2xl" }}
             flex={1}
@@ -63,12 +63,12 @@ export function SplitScreenProduct(props: { product; position }) {
   return (
     <Box flex="1">
       <Stack display={{ base: "none", md: "flex" }} direction={{ md: "row" }}>
-        {props.position == "left" && <ProductImage imageURL="/logo.png" />}
+        {props.position == "left" && <ProductImage imageURL={props.product.imageName} />}
         <ProductSummary product={props.product} />
-        {props.position == "right" && <ProductImage imageURL="/logo.png" />}
+        {props.position == "right" && <ProductImage imageURL={props.product.imageName} />}
       </Stack>
       <Stack display={{ md: "none" }} direction={{ base: "column" }}>
-        <ProductImage imageURL="/logo.png" />
+        <ProductImage imageURL={props.product.imageName} />
         <ProductSummary product={props.product} />
       </Stack>
     </Box>
