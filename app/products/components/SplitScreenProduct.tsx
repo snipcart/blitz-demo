@@ -37,7 +37,7 @@ function ProductSummary(props: { product }) {
             className="snipcart-add-item"
             data-item-id={props.product.id}
             data-item-price={props.product.price}
-            data-item-url="/paintings/starry-night"
+            data-item-url={props.product.url}
             data-item-description={props.product.description}
             data-item-image={props.product.imageName}
             data-item-name={props.product.name}

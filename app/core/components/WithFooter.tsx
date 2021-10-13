@@ -8,9 +8,10 @@ export default function WithFooter() {
 
   return (
     <Box
-      mt={"40px"}
+      mt={"auto"}
       bg={useColorModeValue("gray.50", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
+      w={"100%"}
     >
       <Container
         w={{ md: "80%" }}

@@ -5,7 +5,6 @@ import { z } from "zod"
 const CreateProduct = z.object({
   name: z.string(),
   price: z.number(),
-  url: z.string(),
   description: z.string(),
   imageName: z.string(),
 })

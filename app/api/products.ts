@@ -3,7 +3,17 @@ import { BlitzApiHandler, BlitzApiRequest, BlitzApiResponse } from "blitz"
 
 const handler: BlitzApiHandler = async (req: BlitzApiRequest, res: BlitzApiResponse) => {
   const products = await db.product.findMany()
-  res.write(JSON.stringify(products))
+  const formattedProducts = products.map((product) => {
+    return {
+      id: product.id,
+      name: product.name,
+      url: `${req.headers.host}/api/products`,
+      image: product.imageName,
+      price: product.price,
+    }
+  })
+
+  res.write(JSON.stringify(formattedProducts))
   return res.end()
 }
 
