@@ -1,3 +1,4 @@
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -56,4 +57,5 @@ model Product {
   description String
   imageName   String
   name        String
+  image       String
 }
