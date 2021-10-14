@@ -20,10 +20,10 @@ export interface MenuItem {
 }
 
 const menuItems: Array<MenuItem> = [
-  { label: "home", href: "/", adminPage: false },
-  { label: "products", href: "/products", adminPage: true },
-  { label: "create a product", href: "/products/new", adminPage: true },
-  { label: "add an image", href: "/api/files/upload", adminPage: true },
+  { label: "Home", href: "/", adminPage: false },
+  { label: "Products", href: "/products", adminPage: true },
+  { label: "Create a Product", href: "/products/new", adminPage: true },
+  { label: "Add an Image", href: "/api/files/upload", adminPage: true },
 ]
 
 const NavLink = (props: { menuItem: MenuItem }) => (
