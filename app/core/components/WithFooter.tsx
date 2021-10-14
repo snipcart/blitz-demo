@@ -25,7 +25,7 @@ export default function WithFooter() {
         align={{ base: "center", md: "center" }}
       >
         <HStack spacing={8} alignItems={"center"}>
-          <img src="blitzJsExamplelogo.png" alt="Logo" width="55px" />
+          <img src="blitzJsExampleLogo.png" alt="Logo" width="55px" />
           <Stack direction={"row"} spacing={6}>
             {!currentUser ? (
               <Link href={"/login"} currentuser={false}>

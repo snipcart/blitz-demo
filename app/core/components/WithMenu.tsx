@@ -55,7 +55,7 @@ export default function WithMenu() {
           />
           <HStack spacing={8} alignItems={"center"}>
             <Box>
-              <img src="blitzJsExamplelogo.png" alt="Logo" width="70px" />
+              <img src="blitzJsExampleLogo.png" alt="Logo" width="70px" />
             </Box>
             <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
               {menuItems.map((link: MenuItem) => {
