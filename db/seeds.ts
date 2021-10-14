@@ -36,20 +36,20 @@ const products = [
 ]
 
 const seed = async () => {
-  for (let i = 0; i < admins.length; i++) {
-    const admin = admins[i]
+  // for (let i = 0; i < admins.length; i++) {
+  //   const admin = admins[i]
 
-    if (admin) {
-      const adminAlreadyExist = await db.user.findFirst({ where: { email: admin.email } })
-      if (!adminAlreadyExist) {
-        const hashedPassword = await SecurePassword.hash(admin.password)
-        await db.user.create({
-          data: { email: admin.email, hashedPassword, role: "USER" },
-          select: { id: true, name: true, email: true, role: true },
-        })
-      }
-    }
-  }
+  //   if (admin) {
+  //     const adminAlreadyExist = await db.user.findFirst({ where: { email: admin.email } })
+  //     if (!adminAlreadyExist) {
+  //       const hashedPassword = await SecurePassword.hash(admin.password)
+  //       await db.user.create({
+  //         data: { email: admin.email, hashedPassword, role: "USER" },
+  //         select: { id: true, name: true, email: true, role: true },
+  //       })
+  //     }
+  //   }
+  // }
 
   for (let i = 0; i < products.length; i++) {
     const product = products[i]
