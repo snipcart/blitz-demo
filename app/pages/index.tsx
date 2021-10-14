@@ -6,8 +6,10 @@ import { Stack } from "@chakra-ui/react"
 export const ProductsList = ({ jsonProductApi }) => {
   const [products] = useQuery(getProducts, null)
   const productsWithJsonUrl = products.map((product) => {
-    product.url = jsonProductApi
-    return product
+    return {
+      ...product,
+      url: jsonProductApi,
+    }
   })
 
   return (
@@ -23,7 +25,7 @@ export const ProductsList = ({ jsonProductApi }) => {
   )
 }
 
-const Home: BlitzPage = ({ jsonProductApi }) => {
+const Home: BlitzPage<any> = ({ jsonProductApi }) => {
   return (
     <div className="container">
       <main>
