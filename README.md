@@ -17,4 +17,4 @@ Configuration is optional. Everything from authentification to authorization is 
 
 > [Read this](snipcart.com/blog/blitz-js-tutorial) guide & tutorial to get started quickly
 
-> [Live demo]()
+> [Live demo](https://snipcart-blitzjs.herokuapp.com/)
