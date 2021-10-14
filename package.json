@@ -34,8 +34,8 @@
     "final-form": "4.20.4",
     "formidable": "1.2.2",
     "framer-motion": "3.2.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "18.0.0-alpha-8ee4ff883-20211013",
+    "react-dom": "18.0.0-alpha-8ee4ff883-20211013",
     "react-final-form": "6.5.7",
     "zod": "3.9.8",
     "typescript": "~4.3"
