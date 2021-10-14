@@ -13,8 +13,6 @@ export const LoginForm = (props: LoginFormProps) => {
 
   return (
     <div>
-      <h1>Login</h1>
-
       <Form
         submitText="Login"
         schema={Login}

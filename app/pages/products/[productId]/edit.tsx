@@ -25,9 +25,6 @@ export const EditProduct = () => {
       </Head>
 
       <div>
-        <h1>Edit Product {product.id}</h1>
-        <pre>{JSON.stringify(product, null, 2)}</pre>
-
         <ProductForm
           submitText="Update Product"
           // TODO use a zod schema for form validation
